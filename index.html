@@ -5,11 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href = "styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src = "index.js" defer></script>
 </head>
-<body>
-    <button class = "button">Hey!</button>
-</body>
+    <body>
+        <div class = "sidebar">
+            <div class="holder dashboard-holder">
+                <div class = "dashboard-option is-size-3" id = "dashboard-text">Dashboard</div>
+                <span class="material-symbols-outlined dashboardIcon">dashboard</span>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Home</div>
+                <a href="https://www.youtube.com/" class = "icon"><span class="material-symbols-outlined">home</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Profile</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">person</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Messages</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">mail</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">History</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">history</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Tasks</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+            </div>
+            <div class="holder" id = "communities">
+                <div class = "dashboard-option">Communities</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">group</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Settings</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">settings</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Support</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">help</span></a>
+            </div>
+            <div class="holder">
+                <div class = "dashboard-option">Privacy</div>
+                <a href="" class="icon"><span class="material-symbols-outlined">verified_user</span></a>
+            </div>
+        </div>
+        <div class = "searchbar-area">
+            <span class="material-symbols-outlined" id = "searchIcon">search</span>
+            <input class="input searchbar" type="text" placeholder="Search">
+        </div>
+        <div class = "user-greeting"></div>
+        <div class = "content"></div>
+    </body>
 </html>
