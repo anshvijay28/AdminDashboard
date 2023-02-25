@@ -23,12 +23,15 @@ body {
     padding-top: 4vh;
 }
 .searchbar-area {
+    position: relative;
     display: flex;
     background-color: #f8f7ff;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 11;
+    width: 70%;
+    margin-top: 2.3vh;
 }
 .user-greeting {
     background-color: green;
@@ -94,16 +97,36 @@ body {
     padding-left: 1.2vw;
 }
 
-.searchbar {
-    border-radius: 2vw;
-}
-
 #searchIcon {
+    position: absolute;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
+    'FILL' 1,
+    'wght' 700,
     'GRAD' 0,
     'opsz' 48;
+    top: 1.3vh;
+    left: 2vw;
+}
+.searchbar {
+    position: absolute;
+    left: calc(3vw + 24px);
+}
+#notificationsIcon {
+    position: absolute;
+    top: 1.3vh;
+    left: calc(100% + 6.5vw);
+}
+.profile-pic {
+    position: absolute;
+    top: 0vh;
+    left: calc(100% + 8.5vw); 
+}
+.username-text {
+    position: absolute;
+    top: -.7vh;
+    left: calc(100% + 14vw);
+    color: black;
+    white-space: nowrap;
 }
 
 
